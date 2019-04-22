@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nk_tiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Плитки (выстраиваются в прямоугольник, адаптивно)</h3>
+        <div class="nk_tiles">
+            <!-- data-ratio - фактические ширина / высота картинки -->
+            <div class="item" style="background-image:url(img/image_01.jpg);" data-ratio="1.3333333333333333"></div>
+            <div class="item" style="background-image:url(img/image_02.jpg);" data-ratio="1.7777777777777777"></div>
+            <div class="item" style="background-image:url(img/image_03.jpg);" data-ratio="1.3333333333333333"></div>
+            <div class="item" style="background-image:url(img/image_04.jpg);" data-ratio="0.6876750700280112"></div>
+            <div class="item" style="background-image:url(img/image_05.jpg);" data-ratio="0.6425"></div>
+            <div class="item" style="background-image:url(img/image_06.jpg);" data-ratio="0.6666666666666666"></div>
+            <div class="item" style="background-image:url(img/image_07.jpg);" data-ratio="0.75"></div>
+            <!-- <div class="item" style="background-image:url(img/image_08.jpg);" data-ratio="1.5"></div>
+            <div class="item" style="background-image:url(img/image_09.jpg);" data-ratio="0.6654135338345865"></div>
+            <div class="item" style="background-image:url(img/image_10.jpg);" data-ratio="1.0"></div>
+            <div class="item" style="background-image:url(img/image_11.jpg);" data-ratio="1.3333333333333333"></div>
+            <div class="item" style="background-image:url(img/image_12.jpg);" data-ratio="1.499267935578331"></div>
+            <div class="item" style="background-image:url(img/image_13.jpg);" data-ratio="2.2806236080178173"></div>
+            <div class="item" style="background-image:url(img/image_14.jpg);" data-ratio="0.9169764560099133"></div>
+            <div class="item" style="background-image:url(img/image_15.jpg);" data-ratio="1.7744227353463589"></div>
+            <div class="item" style="background-image:url(img/image_16.jpg);" data-ratio="1.7791044776119402"></div>
+            <div class="item" style="background-image:url(img/image_17.jpg);" data-ratio="0.6640106241699867"></div> -->
+        </div>
+
+    </div>
+    <script>
+        "use strict";
+        document.addEventListener("DOMContentLoaded", function(){
+            (function() {
+                if(document.querySelector('.nk_tiles')){
+                    let a = new Tiles({
+                        "tilesWrap": ".nk_tiles",
+                        "tiles": ".item"
+                    });
+                }
+            })();  
+        });
+    </script>
+    <script src="nk_tiles.js"></script>
+
+</body>
+</html>
